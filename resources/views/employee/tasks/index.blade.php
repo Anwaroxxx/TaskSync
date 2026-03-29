@@ -5,7 +5,7 @@
         </h2>
     </x-slot>
 
-    <div class="py-12 bg-zinc-950">
+    <div class="py-12 bg-black">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             
             @if (session('success'))
@@ -18,7 +18,7 @@
                 <div class="overflow-x-auto">
                     <table class="min-w-full text-left">
                         <thead>
-                            <tr class="border-b border-zinc-800 bg-zinc-950/50">
+                            <tr class="border-b border-zinc-800 bg-zinc-900/50">
                                 <th class="px-6 py-4 text-xs font-bold text-zinc-500 uppercase tracking-widest">Task</th>
                                 <th class="px-6 py-4 text-xs font-bold text-zinc-500 uppercase tracking-widest">Organizer</th>
                                 <th class="px-6 py-4 text-xs font-bold text-zinc-500 uppercase tracking-widest">Status</th>

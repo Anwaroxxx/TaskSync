@@ -1,4 +1,4 @@
-<nav x-data="{ open: false }" class="bg-zinc-900 border-b border-zinc-800">
+<nav x-data="{ open: false }" class="bg-black border-b border-zinc-800/50">
     <!-- Primary Navigation Menu -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
@@ -9,7 +9,7 @@
                         <svg class="w-8 h-8 text-zinc-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
                         </svg>
-                        <span class="text-white font-bold tracking-tight">TaskFlow</span>
+                        <span class="text-white font-bold tracking-tight">TaskSync</span>
                     </a>
                 </div>
 
@@ -37,7 +37,7 @@
             <div class="hidden sm:flex sm:items-center sm:ms-6">
                 <x-dropdown align="right" width="48">
                     <x-slot name="trigger">
-                        <button class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-zinc-400 bg-zinc-900 hover:text-white focus:outline-none transition-none">
+                        <button class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-zinc-400 bg-black hover:text-white focus:outline-none transition-none">
                             <div>{{ Auth::user()->name }}</div>
 
                             <div class="ms-1">
@@ -49,7 +49,7 @@
                     </x-slot>
 
                     <x-slot name="content">
-                        <x-dropdown-link :href="route('profile.edit')" class="bg-zinc-900 text-zinc-400 hover:text-white hover:bg-zinc-800 transition-none">
+                        <x-dropdown-link :href="route('profile.edit')" class="bg-black text-zinc-400 hover:text-white hover:bg-zinc-800 transition-none">
                             {{ __('Profile') }}
                         </x-dropdown-link>
 
@@ -58,7 +58,7 @@
                             @csrf
 
                             <x-dropdown-link :href="route('logout')"
-                                    class="bg-zinc-900 text-zinc-400 hover:text-red-400 hover:bg-zinc-800 transition-none"
+                                    class="bg-black text-zinc-400 hover:text-red-400 hover:bg-zinc-800 transition-none"
                                     onclick="event.preventDefault();
                                                 this.closest('form').submit();">
                                 {{ __('Log Out') }}
@@ -81,7 +81,7 @@
     </div>
 
     <!-- Responsive Navigation Menu -->
-    <div :class="{'block': open, 'hidden': ! open}" class="hidden sm:hidden bg-zinc-900 border-t border-zinc-800">
+    <div :class="{'block': open, 'hidden': ! open}" class="hidden sm:hidden bg-black border-t border-zinc-800">
         <div class="pt-2 pb-3 space-y-1">
             <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')" class="text-zinc-400">
                 {{ __('Dashboard') }}

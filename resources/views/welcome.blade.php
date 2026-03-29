@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>TaskFlow | Professional Task Management</title>
+        <title>TaskSync | Professional Task Management</title>
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
@@ -13,7 +13,7 @@
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
-    <body class="font-sans antialiased bg-zinc-950 text-zinc-300 min-h-screen flex flex-col items-center justify-center selection:bg-indigo-500 selection:text-white">
+    <body class="font-sans antialiased bg-black text-zinc-300 min-h-screen flex flex-col items-center justify-center selection:bg-indigo-500 selection:text-white">
         
         @if (Route::has('login'))
             <nav class="fixed top-0 right-0 p-8 flex items-center gap-6 z-10 font-medium">
@@ -68,11 +68,11 @@
             </div>
         </main>
 
-        <footer class="mt-auto py-10 w-full max-w-5xl px-6 border-t border-zinc-900 flex flex-col md:flex-row items-center justify-between text-zinc-600 text-sm gap-4">
+        <footer class="mt-auto py-10 w-full max-w-5xl px-6 border-t border-zinc-900/50 flex flex-col md:flex-row items-center justify-between text-zinc-600 text-sm gap-4">
             <div class="flex items-center gap-2">
-                <span class="font-bold text-zinc-400">TaskFlow</span>
+                <span class="font-bold text-zinc-400">TaskSync</span>
             </div>
-            <p>&copy; 2026 TaskFlow. Professional Utility.</p>
+            <p>&copy; 2026 TaskSync. Professional Utility.</p>
         </footer>
     </body>
 </html>
