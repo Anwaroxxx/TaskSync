@@ -136,8 +136,6 @@ php artisan migrate --seed
 php artisan serve
 ```
 
-Visit [http://localhost:8000](http://localhost:8000)
-
 ---
 
 ## Roles & Permissions
