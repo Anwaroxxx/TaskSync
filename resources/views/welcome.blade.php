@@ -67,12 +67,5 @@
                 </div>
             </div>
         </main>
-
-        <footer class="mt-auto py-10 w-full max-w-5xl px-6 border-t border-zinc-900/50 flex flex-col md:flex-row items-center justify-between text-zinc-600 text-sm gap-4">
-            <div class="flex items-center gap-2">
-                <span class="font-bold text-zinc-400">TaskSync</span>
-            </div>
-            <p>&copy; 2026 TaskSync. Professional Utility.</p>
-        </footer>
     </body>
 </html>
